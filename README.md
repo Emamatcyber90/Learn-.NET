@@ -2,7 +2,7 @@
 
 This tutorial shows how to build a WPF(desktop) application and a ASP.NET(web) application that displays data from a SQL Server database. 
 
-# Starter Steps
+# Starter Steps for Both WPF and ASP.NET Apps
 
 ### 1. Make Database with Fake Data
 
