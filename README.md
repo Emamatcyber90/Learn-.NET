@@ -64,13 +64,7 @@ INSERT INTO [Transactions] VALUES
 	(12, 5, 6, 79);
 ```
 
-### 1. Add Primary Key
 
-**Important**: declare primary key for `id`. Otherwise the following steps will break.
-
-Insert some fake data using the following:
-
-If you cannot change the table design
 
 
 # . ASP.NET Web App
@@ -84,8 +78,13 @@ In the popup menu, select "Entity Framework," and name it "VenmeContext"
 ### 1. Migrate Data
 PMC > enable-migrations -VenmeContext
 
+### 1. (Optional) Add Primary Key
 
-### 1. (Optional) 
+**Important**: declare primary key for `id`. Otherwise the following steps will break.
+
+Insert some fake data using the following:
+
+If you cannot change the table design
 
 ### 1. Move model files into the Models folder
 
