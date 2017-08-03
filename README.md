@@ -69,6 +69,12 @@ INSERT INTO [Transactions] VALUES
 
 # . ASP.NET Web App
 
+### 1. Start a new project
+
+Open Visual Studio 2015 or 2017, click "File" > "New" > "Project." On the pop-up window, select "Web" in the left panel and then select "ASP.NET Web Application" in the middle panel. On the bottom, under "Name," rename the project to "Venme," and hit "OK."
+
+In the new pop-up window, select "MVC" and de-select the Microsoft Azure "Host in the cloud" option if it was checked by default. Click "OK."
+
 ### 1. Generate Models from Database with Entity Framework
 
 Assume you completed the starter step "Make Database with Fake Data," now right click on your project > click "Add" > click "New Item."
