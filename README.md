@@ -85,10 +85,10 @@ After the automatic code generation, You will see a data diagram without any lin
 
 ### 1. Migrate Data
 
-Much like Git, we use data migration to track and sync our database models. Under "Tools" > "NuGet Package Manager" > "Package Manager Console," type in enable-migrations -VenmeContext like this:
+Much like Git, we use data migration to track and sync our database models. Under "Tools" > "NuGet Package Manager" > "Package Manager Console," type in "Enable-Migrations -ContextTypeName Venme.VenmeEntities" like this:
 
 ```
-PM> enable-migrations -VenmeContext
+PM> Enable-Migrations -ContextTypeName Venme.VenmeEntities
 ```
 
 ### 1. (Optional) Add Primary Key
