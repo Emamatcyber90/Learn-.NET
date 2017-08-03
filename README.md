@@ -1,4 +1,4 @@
-# Learn-.NET
+# Building WPF and ASP.NET Applications with Entity Framework
 
 This tutorial shows how to build a WPF(desktop) application and a ASP.NET(web) application that displays data from a SQL Server database. 
 
