@@ -97,13 +97,13 @@ Add our initial model:
 PM> Add-Migration InitialModel -IgnoreChanges
 ```
 
-You can check the difference between the current state of your project and the database:
+Apply the (empty) changes:
 
 ```
 PM> Update-Database
 ```
 
-It should return "no change," because you haven't changed the data models at all!
+It should succeed doing nothing!
 
 ### 1. (Optional) Add Primary Key
 
