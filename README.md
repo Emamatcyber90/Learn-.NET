@@ -105,6 +105,10 @@ PM> Update-Database
 
 It should succeed doing nothing!
 
+### 1. Add Reference Type 
+
+Follow [this article](https://stackoverflow.com/questions/13650257/adding-a-foreign-key-with-code-first-migration)
+
 ### 1. (Optional) Add Primary Key
 
 **Important**: declare primary key for `id`. Otherwise the following steps will break.
