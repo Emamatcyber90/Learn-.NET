@@ -6,7 +6,60 @@ This tutorial shows how to build a WPF(desktop) application and a ASP.NET(web) a
 
 ### 1. Make Database with Fake Data
 
-Let's call this project "Venme." We first start a SQL Server (localhost) database called "Venme." We make two tables, "User" and "Transaction." 
+Create a database called 'Venme'.
+
+```sql
+USE Venme;
+
+CREATE TABLE Users (
+	id int Primary Key,
+	name varchar(255) NOT NULL
+);
+
+CREATE TABLE Transactions (
+	id int Primary Key,
+	[from] int,
+	[to] int,
+	amount int
+);
+```
+We make two tables, "User" and "Transaction" with the following script:
+
+```sql
+USE Venme;
+GO
+
+INSERT INTO [Users] VALUES 
+	(1, 'Marvin Minsky'), 
+	(2, 'John McCarthy'), 
+	(3, 'Edsger Dijkstra'), 
+	(4, 'Donald Knuth'), 
+	(5, 'Allen Newell'), 
+	(6, 'Herbert Simon');
+```
+
+
+
+Some fake data for 'Transactions':
+
+```sql
+USE Venme;
+GO
+
+INSERT INTO [Transactions] VALUES 
+	(1, 1, 2, 35), 
+	(2, 1, 3, 24), 
+	(3, 2, 4, 7), 
+	(4, 3, 5, 56), 
+	(5, 4, 1, 89), 
+	(6, 6, 5, 45),
+	(7, 2, 1, 102), 
+	(8, 3, 1, 23), 
+	(9, 4, 2, 65), 
+	(10, 5, 3, 82), 
+	(11, 1, 4, 58), 
+	(12, 5, 6, 79);
+```
 
 ### 1. Add Primary Key
 
