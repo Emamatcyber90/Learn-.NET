@@ -79,10 +79,17 @@ In the new pop-up window, select "MVC" and de-select the Microsoft Azure "Host i
 
 Assume you completed the starter step "Make Database with Fake Data," now right click on your project > click "Add" > click "New Item."
 
-In the popup menu, select "Entity Framework," and name it "VenmeContext"
+In the popup menu, select "ADO.NET Entity Data Model," and name it "VenmeContext." In the pop-up window, select "Code First from database," and click "Next." In the following window, click "New Connection." My set up is: "localhost" for "Server name" and "Venme" for "Select or enter a database name." Include all of "Tables". Click "OK" if you receive a warning message saying "this might harm your computer." It won't.
+
+After the automatic code generation, You will see a data diagram without any link between them. We will now add a relationship between the two tables.
 
 ### 1. Migrate Data
-PMC > enable-migrations -VenmeContext
+
+Much like Git, we use data migration to track and sync our database models. Under "Tools" > "NuGet Package Manager" > "Package Manager Console," type in enable-migrations -VenmeContext like this:
+
+```
+PM> enable-migrations -VenmeContext
+```
 
 ### 1. (Optional) Add Primary Key
 
