@@ -91,6 +91,11 @@ Much like Git, we use data migration to track and sync our database models. Unde
 PM> Enable-Migrations -ContextTypeName Venme.VenmeContext
 ```
 
+Then actually add all the files so far
+```
+PM> Add-Migration InitialModel
+```
+
 ### 1. (Optional) Add Primary Key
 
 **Important**: declare primary key for `id`. Otherwise the following steps will break.
