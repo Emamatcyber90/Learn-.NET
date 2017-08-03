@@ -8,6 +8,8 @@ This tutorial shows how to build a WPF(desktop) application and a ASP.NET(web) a
 
 Create a database called 'Venme'.
 
+Make two tables, "User" and "Transaction" with the following script:
+
 ```sql
 USE Venme;
 
@@ -23,7 +25,8 @@ CREATE TABLE Transactions (
 	amount int
 );
 ```
-We make two tables, "User" and "Transaction" with the following script:
+
+Insert some fake data for "Users":
 
 ```sql
 USE Venme;
