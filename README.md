@@ -8,7 +8,7 @@ This tutorial shows how to build a WPF(desktop) application and a ASP.NET(web) a
 
 Let's call this project "FakeVenmo." We first start a SQL Server (localhost) database called "FakeVenmo." You have two tables, one called "user" and the other "transaction." Insert some fake data using the following:
 
-# . ASP.NET
+# . ASP.NET Web App
 
 ## 1. Add Database Connection
 
