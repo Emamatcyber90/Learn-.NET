@@ -90,6 +90,13 @@ Much like Git, we use data migration to track and sync our database models. Unde
 ```
 PM> Enable-Migrations -ContextTypeName Venme.VenmeContext
 ```
+
+Add our initial model:
+
+```
+PM> Add-Migration InitialModel -IgnoreChanges
+```
+
 You can check the difference between the current state of your project and the database:
 
 ```
