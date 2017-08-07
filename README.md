@@ -151,3 +151,5 @@ If you cannot change the table design
 ### 1. Display Data On Load
 
 	First, we must manually set the Source property to the Transactions.Local property of an instance of VenmeContext. The reason for saying Local is that query-able objects such as our DbSets cannot execute on load. If you don't use Load, but simply venmeContext.Transactions, starting the project will crash on load.
+	
+	Also, because Entity Framework uses lazy loading by default, we need to specify its loading behavior as `_venmeContext.Transactions.Load();`
