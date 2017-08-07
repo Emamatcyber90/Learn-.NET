@@ -67,7 +67,7 @@ INSERT INTO [Transactions] VALUES
 
 
 
-# . ASP.NET Web App
+# ASP.NET Web App
 
 ### 1. Start a new project
 
@@ -121,11 +121,23 @@ If you cannot change the table design
 
 
 
-
-
-
-
 ### 1. Add Controllers
 
 
 ### 1. Edit Views to Display Data
+
+
+# WPF App
+
+### 1. Start Project
+
+	Under "file" > "new" > "project," select "WPF Application" and name it venmeWPF. 
+	
+### 1. Add Models Entity Framework
+
+	In the Solution Explorer, right click the project "VenmeWPF" and select "Add" > New Item. Then under "Data" in the left panel, select "ADO.NET Entity Data Model." Name it "VenmeContext" and select "Code First from Database." Then use "localhost" for database url and "Venme" as database. Then check the box for all of "Tables." Finish.
+	
+	
+### 1. Add UI elements
+
+	Double-click the MainWindow.xaml in the Solution Explorer. In the "Toolbox" explorer on the left, search for "datagrid." Drag it into the UI. 
