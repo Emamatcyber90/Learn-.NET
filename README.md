@@ -137,7 +137,17 @@ If you cannot change the table design
 
 	In the Solution Explorer, right click the project "VenmeWPF" and select "Add" > New Item. Then under "Data" in the left panel, select "ADO.NET Entity Data Model." Name it "VenmeContext" and select "Code First from Database." Then use "localhost" for database url and "Venme" as database. Then check the box for all of "Tables." Finish.
 	
+	You must now build your solution. Otherwise your new models will not be included in your project! This means that the data binding step will fail when the Data Source Wizard will not find your VenmoWPF models.
 	
-### 1. Add UI elements
+	
+### 1. Add DataGrid in XAML
 
 	Double-click the MainWindow.xaml in the Solution Explorer. In the "Toolbox" explorer on the left, search for "datagrid." Drag it into the UI. 
+
+### 1. Bind Our Model to DataGrid 
+
+	In the Data Source explorer, drag our VenmeContext into the DataGrid. This will generate some code.
+	
+### 1. Display Data On Load
+
+	First, we must manually set the Source property to the Transactions.Local property of an instance of VenmeContext. The reason for saying Local is that query-able objects such as our DbSets cannot execute on load. If you don't use Load, but simply venmeContext.Transactions, starting the project will crash on load.
